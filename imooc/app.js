@@ -7,3 +7,19 @@ app.set('view engine','jade')
 app.listen(port)
 
 console.log('project started on port '+ port)
+
+app.get('/',function(req,res){
+	res.render('index',{title:'首页'})
+})
+
+app.get('/',function(req,res){
+	res.render('detail',{title:'详情页'})
+})
+
+app.get('/',function(req,res){
+	res.render('admin',{title:'后台录入页'})
+})
+
+app.get('/',function(req,res){
+	res.render('list',{title:'列表页'})
+})
