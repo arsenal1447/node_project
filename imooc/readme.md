@@ -1,3 +1,13 @@
+
+## 环境准备
+
+	npm install express jade moment mongoose
+	
+	npm install bower -g
+	
+	bower install bootstrap(git bash执行)
+
+
 ## 遇到的问题
 
 >Error: Cannot find module 'body-parser'
