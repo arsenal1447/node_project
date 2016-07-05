@@ -15,33 +15,33 @@ app.listen(port)
 console.log('project started on port '+ port)
 
 app.get('/',function(req,res){
-	res.render('index',{
-    title:'首页',
-    movies:[{    
-      title:'机械战警',
-      _id:'1',
-      poster:'http://imgchr.com/images/X5SYCVSKA242YTZCW56.png'
-    },{  
-      title:'机械战警',
-      _id:'2',
-      poster:'http://imgchr.com/images/X5SYCVSKA242YTZCW56.png'
-    },{  
-      title:'机械战警',
-      _id:'3',
-      poster:'http://imgchr.com/images/X5SYCVSKA242YTZCW56.png'      
-    },{  
-      title:'机械战警',
-      _id:'4',
-      poster:'http://imgchr.com/images/X5SYCVSKA242YTZCW56.png'      
-    },{  
-      title:'机械战警',
-      _id:'5',
-      poster:'http://imgchr.com/images/X5SYCVSKA242YTZCW56.png'      
-    },{  
-      title:'机械战警',
-      _id:'6',
-      poster:'http://imgchr.com/images/X5SYCVSKA242YTZCW56.png'              
-    }]
+    res.render('index',{
+        title:'zxx 首页',
+        movies:[{    
+          title:'机械战警',
+          _id:'1',
+          poster:'http://imgchr.com/images/X5SYCVSKA242YTZCW56.png'
+        },{  
+          title:'机械战警',
+          _id:'2',
+          poster:'http://imgchr.com/images/X5SYCVSKA242YTZCW56.png'
+        },{  
+          title:'机械战警',
+          _id:'3',
+          poster:'http://imgchr.com/images/X5SYCVSKA242YTZCW56.png'      
+        },{  
+          title:'机械战警',
+          _id:'4',
+          poster:'http://imgchr.com/images/X5SYCVSKA242YTZCW56.png'      
+        },{  
+          title:'机械战警',
+          _id:'5',
+          poster:'http://imgchr.com/images/X5SYCVSKA242YTZCW56.png'      
+        },{  
+          title:'机械战警',
+          _id:'6',
+          poster:'http://imgchr.com/images/X5SYCVSKA242YTZCW56.png'              
+        }]
   })
 })
 
