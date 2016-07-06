@@ -30,6 +30,13 @@
 
 
 
-## mongodb 删除数据
+## mongodb 
+
+
+>插入数据
+
+![](https://github.com/zxx1988328/node_project/blob/master/img/insert_data.png)
+
+>删除数据
 
 ![](https://github.com/zxx1988328/node_project/blob/master/img/delete_data.png)
