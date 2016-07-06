@@ -27,3 +27,8 @@
 	cnpm install body-parser
 
 正常安装，运行
+
+
+
+## mongodb 删除数据
+
