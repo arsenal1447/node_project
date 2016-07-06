@@ -1,4 +1,4 @@
-extends ../layout
+extend ../layout
 
 block content
   .container
@@ -36,3 +36,5 @@ block content
           label.col-sm-3.control-label(for="inputSummary") 电影简介
           .col-sm-10
             input#inputSummary.form-control(type="text",name="movie[summary]" value="#{movie.summary}")
+        .col-sm-offset-2.col-sm-10
+            button.btn.btn-primary(type="submit") 提交
