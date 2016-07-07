@@ -13,7 +13,7 @@ app.set('view engine','jade')
 // app.use(express.bodyParser())
 // app.use(bodyParser.urlencoded({extended:false}))
 app.use(require('body-parser').urlencoded({extended: true}))
-app.use(express.static(path.join(__dirname,'bower_components')))
+app.use(express.static(path.join(__dirname,'public/')))
 app.locals.moment = require('moment');
 app.listen(port)
 
