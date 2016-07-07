@@ -40,3 +40,16 @@
 >删除数据
 
 ![](https://github.com/zxx1988328/node_project/blob/master/img/delete_data.png)
+
+
+## 修改样式文件路径
+
+>增加**.bowerrc**文件，内容如下
+
+	{
+    	"directory":"public/libs"
+	}
+
+>运行命令  bower install bootstrap,这样文件会下载到指定的文件夹下，如下图
+
+![](https://github.com/zxx1988328/node_project/blob/master/img/stylefile.png)
