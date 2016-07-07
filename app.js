@@ -25,10 +25,7 @@ app.get('/',function(req,res){
         console.log(err);
       }
 
-      res.render('index',{
-          title:'zxx 首页',
-          movies:movies
-      });
+      res.render('index',{title:'zxx 首页',movies:movies});
   });
 });
 
@@ -37,10 +34,7 @@ app.get('/movie/:id',function(req,res){
   var id = req.params.id;
 
   Movie.findById(id,function(err,movie){
-    res.render('detail',{
-      title:'zxx ' + movie.title,
-      movies:movie
-    });
+    res.render('detail',{title:'zxx ' + movie.title,movies:movie});
   });
 });
 
@@ -69,17 +63,14 @@ app.get('/admin/update/:id',function(req,res){
 
   if(id){
     Movie.findById(id,function(err,movie){      
-        res.render('admin',{
-          title:'zxx 后台更新页面',
-          movie:movie
-        });
+        res.render('admin',{title:'zxx 后台更新页面',movie:movie});
     });
   }
 })
 
 
 // admin post movies
-app.post('/admin/movie/new',function(req,res){
+app.post('/admin/movie',function(req,res){
   var id = req.body.movie._id;
   var movieObj = req.body.movie;
   var _movie;
@@ -129,10 +120,25 @@ app.get('/admin/list',function(req,res){
       if(err){
         console.log(err);
       }
-
-      res.render('list',{
-        title:'zxx 列表页',
-        movies:movies
-      })
+      console.log('222222');
+      console.log(movies);
+      console.log('333333');
+      res.render('list',{title:'zxx 列表页',movies:movies})
   });
+})
+
+
+// list delete movie
+app.delete('/admin/list',function(req,res){
+  var id = req.query.id
+
+  if(id){
+    Movie.remove({_id:id},function(err,movie){
+      if(err){
+        console.log(err)
+      }else{
+        res.json({success:1})
+      }
+    })
+  }
 })

@@ -6,8 +6,8 @@ $(function(){
 
         $.ajax({
             type:'DELETE',
-            url:'/admin/list?id'+ id
-        }}
+            url:'/admin/list?id='+ id
+        })
         .done(function(results){
             if(results.status===1){
                 if(tr.length>0){
