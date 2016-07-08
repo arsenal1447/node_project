@@ -107,10 +107,11 @@ app.post('/admin/movie',function(req,res){
     });
   }
 
-  res.render('admin',{
-    title:'后台录入页',
-    movie:{}
-  })
+  //屏蔽掉这里，保存后才可以正确跳转
+  // res.render('admin',{
+  //   title:'后台录入页',
+  //   movie:{}
+  // })
 })
 
 
