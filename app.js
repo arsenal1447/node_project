@@ -30,11 +30,11 @@ app.get('/',function(req,res){
 });
 
 //detail page
-app.get('/movie/:id',function(req,res){
+app.get('/movie/:id',function(req, res){
   var id = req.params.id;
 
-  Movie.findById(id,function(err,movie){
-    res.render('detail',{title:'zxx ' + movie.title,movies:movie});
+  Movie.findById(id,function(err, movie){
+    res.render('detail', {title:'zxx ' + movie.title,movie:movie});
   });
 });
 
