@@ -58,13 +58,13 @@ app.get('/admin/movie',function(req,res){
 
 
 // admin update movies
-app.get('/admin/update/:id',function(req,res){
-  var id = req.params._id;
+app.get('/admin/update/:id',function(req, res){
+  var id = req.params.id;
 
   if(id){
     Movie.findById(id,function(err,movie){      
         res.render('admin',{title:'zxx 后台更新页面',movie:movie});
-    });
+        });
   }
 })
 
@@ -121,9 +121,7 @@ app.get('/admin/list',function(req,res){
       if(err){
         console.log(err);
       }
-      console.log('222222');
-      console.log(movies);
-      console.log('333333');
+
       res.render('list',{title:'zxx 列表页',movies:movies})
   });
 })
