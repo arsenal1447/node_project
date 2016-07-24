@@ -53,3 +53,9 @@
 >运行命令  bower install bootstrap,这样文件会下载到指定的文件夹下，如下图
 
 ![](https://github.com/zxx1988328/node_project/blob/master/img/stylefile.png)
+
+
+npm install grunt-cli
+npm install grunt-concurrent
+npm install grunt-contrib-watch
+npm install grunt-nodemon
