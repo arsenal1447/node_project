@@ -55,7 +55,7 @@
 ![](https://github.com/zxx1988328/node_project/blob/master/img/stylefile.png)
 
 
-npm install grunt-cli
-npm install grunt-concurrent
-npm install grunt-contrib-watch
-npm install grunt-nodemon
+	npm install grunt-cli
+	npm install grunt-concurrent
+	npm install grunt-contrib-watch
+	npm install grunt-nodemon
